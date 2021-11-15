@@ -4,8 +4,8 @@ require 'pg'
 start_access= Time.now
  
   CSV.open("db.csv", "w") do |csv|
-    for index in 1..500000
-      email = "myhangzenda#{index}@gmail.com"
+    for i in 1..500000
+      email = "myhangzenda#{i}@gmail.com"
       csv << ['Nguyen Thi My Hang',email,19001008,'Ho Chi Minh city','18/02/1999','Profile description']
   end
   end
