@@ -20,8 +20,10 @@ end_read_file = Time.now
 begin_import_file = Time.now
   con = PG.connect(dbname: 'ex', user:'hang')
   for row in db
+   index = row[5].gsub("'","''")
+   
     con.exec("INSERT INTO INFO_USER(name,email,phone,address,birth,profile) 
-              VALUES('#{row[0]}','#{row[1]}','#{row[2]}','#{row[3]}','#{row[4]}','#{row[5]}')")
+              VALUES('#{row[0]}','#{row[1]}','#{row[2]}','#{row[3]}','#{row[4]}','#{index}')")
   end
 end_import_file = Time.now
 
