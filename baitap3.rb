@@ -6,7 +6,7 @@ start_access= Time.now
   CSV.open("db.csv", "w") do |csv|
     for i in 1..500000
       email = "myhangzenda#{i}@gmail.com"
-      csv << ['Nguyen Thi My Hang',email,19001008,'Ho Chi Minh city','18/02/1999','Profile description']
+      csv << ['Nguyen Thi My Hang',email,19001008,'Ho Chi Minh city','18/02/1999','Like TV 100\", Some special charactor: \\ / ' $ ~ & @ # ( ; \"']
   end
   end
 stop_access = Time.now
