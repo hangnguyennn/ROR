@@ -1,12 +1,12 @@
 
 require 'csv'
 require 'pg'
-start_access= Time.now
- 
+start_access = Time.now
+ profile= "Like TV 100\", Some special charactor: \\ / ' $ ~ & @ # ( ; \""
   CSV.open("db.csv", "w") do |csv|
     for i in 1..500000
       email = "myhangzenda#{i}@gmail.com"
-      csv << ['Nguyen Thi My Hang',email,19001008,'Ho Chi Minh city','18/02/1999','Like TV 100\", Some special charactor: \\ / ' $ ~ & @ # ( ; \"']
+      csv << ['Nguyen Thi My Hang',email,19001008,'Ho Chi Minh city','18/02/1999',profile]
   end
   end
 stop_access = Time.now
