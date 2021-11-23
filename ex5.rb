@@ -29,3 +29,9 @@ for i in 0..n
       end
     end
 end
+
+# Code e viết gọn, bắt được exception khi user input chưa đúng 
+# A có vài góp ý nhỏ:
+# 1. Em nên chú ý cách trình bày, ở đây là tab end line 12
+# 2. Đặt tên biến có ý nghĩa hơn. Vd biến n
+# 3. Nên cách ra với những toán tử so sánh. VD: if i==n -> if i == n
