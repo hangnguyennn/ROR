@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+h4 {
+    color: white;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.topnav li {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.poster {
+    width: 300px;
+    height: 250px;
+}
+
+.topnav a {
+    color: white;
+}
